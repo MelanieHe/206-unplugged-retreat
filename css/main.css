@@ -101,14 +101,21 @@ footer {
 
 /* ----- Header -----*/
 
+header {
+  padding: 20px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  margin: 0;
 }
 
 header .header-divider {
+  width: 100%;
 
 }
 
@@ -117,20 +124,30 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
-
+  width: 45%;
+  list-style: none;
+  padding: 15px 0;
 }
 
 header nav ul li {
+  padding: 0 30px;
 
 }
 
 /* ----- Home Header Section -----*/
 
 .header {
+  margin: 0;
 
+}
+
+.header h1 {
+  padding-top: 50px;
+  margin: 0;
 }
 
 .hero-area {
@@ -144,6 +161,9 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  padding: 30px 0;
+  margin: 0;
 }
 
 .form-description {
@@ -151,7 +171,7 @@ aside {
 }
 
 .form {
-
+  padding: 20px 0;
 }
 
 /* ----- Home Features Section -----*/
@@ -161,10 +181,16 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
 }
 
-.features {
+.features article {
+  width: 55%;
 
+}
+
+.features p {
+  margin: 0;
 }
 
 .features-items { 
@@ -172,6 +198,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 30px 0;
 }
 
 .fontawesome-icon
@@ -187,6 +214,44 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 45px 0;
+}
+
+.reviews h3 {
+  width: 50%;
+}
+
+/* ----- Footer -----*/
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 55%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer p {
+  margin: 0;
+}
+
+.contact {
+
+}
+
+.social {
+
+}
+
+.copyright {
+
 }
 
 /* ----- About Page -----*/
@@ -196,6 +261,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 45px 0;
 }
 
 .mission-content {
@@ -211,6 +277,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
 
 .general-information {
@@ -228,6 +295,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 45px 0;
 }
 
 .faq { 
@@ -238,37 +306,9 @@ aside {
 }
 
 .question {
-
+  padding: 20px 0;
 }
 
-
-/* ----- Footer -----*/
-
-footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap
-}
-
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.contact {
-
-}
-
-.social {
-
-}
-
-.copyright {
-
-}
 
 
 /* ==========================================================================
