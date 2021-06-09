@@ -97,12 +97,64 @@ footer {
   flex-flow: row wrap;
 }
 
+/*---------------- General Styles --------------*/
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+  font-weight: lighter;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #e2e3ed;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 /* --------------- Mobile Layout ---------------*/
 
 /* ----- Header -----*/
 
 header {
-  padding: 20px 0;
+  padding-top: 20px;
+  background: #202322;
 }
 
 header .content-wrapper {
@@ -110,13 +162,14 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  width: 100%;
   margin: 0;
 }
 
 header .header-divider {
   width: 100%;
-
+  border-bottom: 1px solid #3a3a3a;
+  padding-top: 10px;
 }
 
 header nav {
@@ -128,69 +181,91 @@ header nav {
 }
 
 header nav ul {
-  width: 45%;
-  list-style: none;
-  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row nowrap;
+  width: 75%;
+  padding: 20px 0;
 }
 
-header nav ul li {
-  padding: 0 30px;
-
+header nav ul li a {
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
 }
+
 
 /* ----- Home Header Section -----*/
 
 .header {
   margin: 0;
-
 }
 
 .header h1 {
-  padding-top: 50px;
-  margin: 0;
+  padding: 40px 20px;
 }
 
 .hero-area {
+  background: url(../img/header-bkgd.png);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 
 }
 
-/* ----- Home Aside -----*/
+/* ----- Mobile Home Aside -----*/
 
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
-  padding: 30px 0;
+  padding: 40px 20px;
   margin: 0;
+  background: #527158;
 }
 
-.form-description {
-
+.form-description h3,
+.form-description p {
+  padding-bottom: 20px;
 }
 
-.form {
+.form h3 {
   padding: 20px 0;
 }
 
-/* ----- Home Features Section -----*/
+.form input {
+
+}
+
+
+
+/* ----- Mobile Home Features Section -----*/
 
 .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  width: 100%;
 }
+
+.features {
+  background: url(../img/main-bkgd.png);
+  background-size: cover;
+  background-position: center;
+  height: 1450px;
+  padding: 40px 20px;
+}
+
 
 .features article {
   width: 55%;
-
 }
 
 .features p {
-  margin: 0;
+  text-align: center;
 }
 
 .features-items { 
@@ -198,30 +273,38 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 30px 0;
+  padding: 50px 0 25px 0;
 }
-
-.fontawesome-icon
 
 .features-items-description {
 
 }
 
-/* ----- Home Reviews Section -----*/
+/* ----- Mobile Home Reviews Section -----*/
 
 .reviews {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 45px 0;
+  padding: 40px 20px;
+  background: #2a423a;
+}
+
+.reviews h2 {
+  padding-bottom: 20px;
 }
 
 .reviews h3 {
   width: 50%;
+  padding: 20px 0;
 }
 
-/* ----- Footer -----*/
+/* ----- Mobile Footer -----*/
+
+footer {
+  background: #202322;
+}
 
 footer .content-wrapper {
   display: flex;
@@ -235,41 +318,80 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  padding: 40px 0 5px 0;
+  width: 100%;
+}
+
+footer h3 {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 footer p {
-  margin: 0;
+  text-align: center;
 }
 
-.contact {
-
+.footer-contact {
+  padding-bottom: 40px;
+  width: 100%;
 }
 
 .social {
+  padding-bottom: 40px;
+  width: 100%;
+}
 
+.social ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row nowrap;
+}
+
+.social ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row nowrap;
 }
 
 .copyright {
 
 }
 
-/* ----- About Page -----*/
+/* ----- Mobile About Page -----*/
 
 .mission {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 45px 0;
+  padding: 40px 20px;
+  background: #527158;
 }
 
-.mission-content {
-
+.mission h2 {
+  padding-bottom: 20px;
 }
 
 .map {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
 
+
+.map figure {
+  margin: 0;
 }
 
 .contact-section {
@@ -277,39 +399,38 @@ footer p {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0;
+  padding: 40px 20px;
+  background: #527158;
 }
 
-.general-information {
-
+.contact h2,
+.general-information h3,
+.general-information address,
+.chat-information h3 {
+  padding-bottom: 20px;
 }
 
-.chat-information {
 
-}
 
-/* ----- FAQ Page -----*/
+/* ----- Mobile FAQ Page -----*/
 
 .faq-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 45px 0;
+  padding: 40px 20px;
+  background: #527158;
 }
 
-.faq { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
 
 .question {
   padding: 20px 0;
 }
 
-
+.question h3 {
+  padding-bottom: 20px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -399,16 +520,210 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/*--------------- TABLET ---------------*/
+
+@media only screen and (min-width: 768px) {
+  /*----- Tablet Base Styles -----*/
+
+  h2 {
+    font-size: 2.6em;
+  }
+
+  h3 {
+    font-size: 1.7em;
+  }
+
+  /*----- Tablet Home Header Section -----*/
+
+  header {
+    padding: 25px 60px;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  header .header-divider {
+    width: 0%;
+    border-bottom: none;
+    padding-top: 0;
+  }
+
+  header nav {
+    justify-content: flex-end;
+  }
+
+  header nav ul {
+    justify-content: flex-end;
+  }
+
+  header nav ul li {
+    padding: 0 15px;
+  }
+
+  .header h1 {
+    font-size: 3.5em;
+    padding: 90px 50px;
+  }
+  /*----- Tablet Home Aside -----*/
+
+  aside {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    padding: 50px;
+  }
+
+  .form-description {
+    width: 40%;
+    padding-right: 130px;
+  }
+
+  .form {
+    width: 40%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  /*----- Tablet Home Features Section -----*/
+
+  .features {
+    flex-flow: row wrap;
+    padding: 90px 50px;
+  }
+
+  .features article {
+    width: 30%;
+    padding: 0 65px;
+  }
+  /*----- Tablet Home Reviews Section -----*/
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    padding: 90px 50px;
+  }
+
+  .reviews h2 {
+    width: 100%;
+  }
+
+  .review-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .review-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 48%;
+  }
+
+  .review-text h3 {
+    width: 100%;
+  }
+
+  /*----- Table Home Footer -----*/
+
+  footer {
+    width: 100%;
+  }
+
+  footer .content-wrapper {
+    padding: 90px 125px 5px 125px;
+    width: 120%;
+  }
+
+  .footer-content {
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .footer-contact {
+    padding-bottom: 100px;
+    width: 40%;
+  }
+
+  .social {
+    padding-bottom: 100px;
+    width: 40%;
+  }
+
+  .copyright {
+  width: 100%;
+  }
+/*----- Tablet About Page-----*/
+  .mission {
+    padding: 90px 50px;
+  }
+
+  .mission-content h2 {
+    padding-bottom: 40px;
+    width: 100%;
+  }
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .map {
+    padding-bottom: 50%;
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding: 90px 50px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .conact h2 {
+    width: 100%;
+  }
+
+  .general-information,
+  .chat-information {
+    width: 50%;
+  }
+
+
+
+/* ----- Tablet FAQ Page -----*/
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+/*--------------- DESKTOP ---------------*/
+
+@media only screen and (min-width: 1200px) {
+
 }
+
 
 /* ==========================================================================
    Print styles.
