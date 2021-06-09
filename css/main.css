@@ -667,16 +667,16 @@ footer p {
     padding: 90px 50px;
   }
 
-  .mission-content h2 {
-    padding-bottom: 40px;
-    width: 100%;
-  }
-
   .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-flow: row wrap;
+  }
+
+  .mission-content h2 {
+    padding-bottom: 40px;
+    width: 100%;
   }
 
   .mission-content p {
@@ -711,9 +711,26 @@ footer p {
     width: 50%;
   }
 
-
-
 /* ----- Tablet FAQ Page -----*/
+
+  .faq-section {
+    padding: 90px 50px;
+  }
+
+  .faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+  }
+
+  .question {
+    width: 45%;
+  }
+
+  .question h3 {
+    font-size: 1em;
+  }
 
 }
 
