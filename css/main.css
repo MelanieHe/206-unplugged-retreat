@@ -184,7 +184,6 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row nowrap;
   width: 75%;
   padding: 20px 0;
 }
@@ -235,10 +234,27 @@ aside {
   padding: 20px 0;
 }
 
-.form input {
-
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
 }
 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
 /* ----- Mobile Home Features Section -----*/
@@ -274,10 +290,6 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   padding: 50px 0 25px 0;
-}
-
-.features-items-description {
-
 }
 
 /* ----- Mobile Home Reviews Section -----*/
@@ -346,14 +358,12 @@ footer h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row nowrap;
 }
 
 .social ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row nowrap;
 }
 
 .copyright p {
@@ -587,9 +597,6 @@ footer h3 {
     padding: 0 0 20px 0;
   }
 
-  .form input {
-    width: 100%;
-  }
 
   /*----- Tablet Home Features Section -----*/
 
@@ -753,8 +760,7 @@ footer h3 {
     font-size: 2.2em;
   }
 
-  p,
-  a {
+  p {
     font-size: 1.3em;
   }
 
@@ -774,6 +780,10 @@ footer h3 {
 
   aside {
     padding: 40px 200px;
+  }
+
+  input[type=button] {
+    font-size: 1.7em;
   }
 
  /*----- Desktop Home Features Section -----*/
@@ -824,6 +834,10 @@ footer h3 {
   .contact-section h2,
   .contact-section h3 {
     padding-bottom: 40px;
+  }
+
+  .contact-section a {
+    font-size: 1.3em;
   }
 
   /* ----- Desktop FAQ Page -----*/
