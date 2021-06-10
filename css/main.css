@@ -112,7 +112,7 @@ body {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5em;
-  font-weight: lighter;
+  font-weight: bolder;
   margin: 0;
 }
 
@@ -328,7 +328,7 @@ footer h3 {
   padding-bottom: 20px;
 }
 
-footer p {
+.footer-contact address {
   text-align: center;
 }
 
@@ -356,8 +356,8 @@ footer p {
   flex-direction: row nowrap;
 }
 
-.copyright {
-
+.copyright p {
+  text-align: center;
 }
 
 /* ----- Mobile About Page -----*/
@@ -569,7 +569,7 @@ footer p {
   /*----- Tablet Home Aside -----*/
 
   aside {
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     flex-flow: row nowrap;
     padding: 50px;
@@ -577,11 +577,14 @@ footer p {
 
   .form-description {
     width: 40%;
-    padding-right: 130px;
   }
 
   .form {
     width: 40%;
+  }
+
+  .form h3 {
+    padding: 0 0 20px 0;
   }
 
   .form input {
@@ -662,7 +665,9 @@ footer p {
   .copyright {
   width: 100%;
   }
+
 /*----- Tablet About Page-----*/
+
   .mission {
     padding: 90px 50px;
   }
@@ -708,7 +713,7 @@ footer p {
 
   .general-information,
   .chat-information {
-    width: 50%;
+    width: 45%;
   }
 
 /* ----- Tablet FAQ Page -----*/
@@ -739,6 +744,101 @@ footer p {
 
 @media only screen and (min-width: 1200px) {
 
+  /*----- Desktop Base Styles -----*/
+  h2 {
+    font-size: 3.5em;
+  }
+
+  h3 {
+    font-size: 2.2em;
+  }
+
+  p,
+  a {
+    font-size: 1.3em;
+  }
+
+  /*----- Desktop Home Header Section -----*/
+
+  header {
+    padding: 25px 120px;
+  }
+
+  .header h1 {
+    font-size: 4.3em;
+    width: 55%;
+    padding: 40px 120px;
+  }
+
+ /*----- Desktop Home Aside -----*/
+
+  aside {
+    padding: 40px 200px;
+  }
+
+ /*----- Desktop Home Features Section -----*/
+
+  .features {
+    padding: 100px 120px;
+  }
+
+  .features .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .features h2 {
+    padding-bottom: 50px;
+  }
+
+  .features article {
+    width: 15%;
+  }
+
+/*----- Desktop Home Reviews Section -----*/
+
+  .reviews {
+    padding: 100px 120px;
+  }
+  
+  .reviews h2 {
+    padding-bottom: 100px;
+  }
+
+/*----- Desktop About Page-----*/
+
+  .mission {
+    padding: 100px 120px;
+  }
+
+  .map {
+    padding-bottom: 40%;
+  }
+
+  .contact-section {
+    padding: 100px 120px;
+  }
+
+  .contact-section h2,
+  .contact-section h3 {
+    padding-bottom: 40px;
+  }
+
+  /* ----- Desktop FAQ Page -----*/
+
+  .faq-section {
+    padding: 100px 120px;
+  }
+
+  .faq-section h2 {
+    padding-bottom: 20px;
+  }
+
+  .question h3 {
+    font-size: 1.3em;
+  }
 }
 
 
