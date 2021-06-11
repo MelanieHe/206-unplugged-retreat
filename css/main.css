@@ -303,12 +303,8 @@ input[type=button] {
   padding: 50px 0 25px 0;
 }
 
-.features-items figure {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+.features-items i {
+  font-size: 3.75em;
 }
 
 /* ----- Mobile Home Reviews Section -----*/
@@ -635,6 +631,10 @@ footer h3 {
     width: 30%;
     padding: 0 65px;
   }
+
+  .features i {
+    font-size: 4em;
+  }
   /*----- Tablet Home Reviews Section -----*/
   .reviews {
     display: flex;
@@ -839,8 +839,8 @@ footer h3 {
     width: 20%;
   }
 
-  .features-items figure {
-    width: 50%;
+  .features i {
+    font-size: 4.25em;
   }
 
 /*----- Desktop Home Reviews Section -----*/
