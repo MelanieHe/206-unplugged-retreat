@@ -218,14 +218,12 @@ header nav ul li a {
 }
 
 .header h1 {
-  padding: 40px 20px;
+  padding: 40px 20px 320px 20px;
 }
 
 .hero-area {
   background: url(../img/header-bkgd.png) center no-repeat #333;
   background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 /* ----- Mobile Home Aside -----*/
@@ -416,7 +414,7 @@ footer h3 {
 
 .map {
   position: relative;
-  padding-bottom: 100%;
+  padding-bottom: 125%;
   height: 0;
   overflow: hidden;
 }
@@ -424,10 +422,9 @@ footer h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
 }
-
 
 .map figure {
   margin: 0;
@@ -603,7 +600,7 @@ footer h3 {
 
   .header h1 {
     font-size: 3.5em;
-    padding: 90px 50px;
+    padding: 90px 50px 420px 50px;
   }
   /*----- Tablet Home Aside -----*/
 
@@ -731,7 +728,7 @@ footer h3 {
   }
 
   .map {
-    padding-bottom: 50%;
+    padding-bottom: 45%;
   }
 
   .contact-section {
@@ -808,7 +805,7 @@ footer h3 {
   .header h1 {
     font-size: 4.3em;
     width: 55%;
-    padding: 40px 120px;
+    padding: 40px 120px 420px 120px;
   }
 
  /*----- Desktop Home Aside -----*/
@@ -863,7 +860,7 @@ footer h3 {
   }
 
   .map {
-    padding-bottom: 40%;
+    padding-bottom: 45%;
   }
 
   .contact-section {
