@@ -451,6 +451,10 @@ footer h3 {
   background: #527158;
 }
 
+.faq h2 {
+  width: 100%;
+}
+
 
 .question {
   padding: 20px 0;
